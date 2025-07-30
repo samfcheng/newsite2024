@@ -1,3 +1,8 @@
+$bg: white;
+$bg-secondary: #ECF6FF;
+$primary: #0019FF;
+$secondary: #8A80FF;
+
 .page-main {
   padding: 20vh 10vw 4rem 10vw;
   display: grid;
@@ -14,26 +19,74 @@
     display: block;
   }
 
-  h2 {
+  h2:not(.highlight-title) {
     margin-top: 3rem;
     margin-bottom: 1rem;
     font-size: 2rem;
   }
+  h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
 
   img {
     max-width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
   }
 
   p {
     color: rgb(0 0 0 / 0.75);
+    margin: 1em 0;
 
     strong {
       font-weight: 500;
     }
   }
+  ul {
+    color: rgb(0 0 0 / 0.75);
+    line-height: 1.5;
+  }
 
   .page-content {
     max-width: 70ch;
+  }
+
+  .highlight-section {
+    background: rgb(0 0 0 / 0.05);
+    border-radius: 8px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h2 {
+      font-size: 2rem;
+      color: black;
+      margin-bottom: 1rem;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .highlight-content {
+      display: grid;
+      grid-template-columns: 6rem auto;
+      gap: 2rem 1rem;
+
+      h3 {
+        margin: 0;
+      }
+
+      .right {
+        margin: 0;
+
+        strong {
+          color: black;
+        }
+      }
+    }
   }
 }
