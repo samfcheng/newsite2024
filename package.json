@@ -17,6 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"@formatjs/intl-segmenter": "^11.5.3",
+		"@tabler/icons-svelte": "^3.34.1",
 		"@vercel/analytics": "^1.1.1",
 		"dayjs": "^1.11.10",
 		"gsap": "^3.12.4",

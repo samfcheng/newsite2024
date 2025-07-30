@@ -1,0 +1,86 @@
+@import url("https://use.typekit.net/iyx2vwu.css"); // Polymath
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.links-main {
+  font-family: "polymath-text", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  h1, h2, h3 {
+    font-family: "polymath-display", sans-serif;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 5rem;
+      width: fit-content;
+      line-height: 1;
+      margin: 0;
+
+      .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 0.75em;
+          height: 0.75em;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+    }
+    p {
+      text-align: center;
+      margin: 0.5rem 0 0 0;
+    }
+  }
+
+  .main-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    .link-group {
+      display: flex;
+      gap: 1rem;
+
+      @media (max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      background: black;
+      color: white;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+}
